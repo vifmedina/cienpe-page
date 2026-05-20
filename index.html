@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CIENPE — Ciência, Ensino, Pesquisa e Tecnologia</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-mark">C</span>
+        <span class="nav__logo-text">IENPE</span>
+      </a>
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#atividades">Atividades</a></li>
+        <li><a href="#missao">Missão</a></li>
+        <li><a href="#contato" class="nav__cta">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="hero__circle hero__circle--1"></div>
+      <div class="hero__circle hero__circle--2"></div>
+      <div class="hero__grid"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal">Ciência · Ensino · Pesquisa · Tecnologia</p>
+      <h1 class="hero__title reveal">
+        Conhecimento que<br />
+        <em>transforma</em><br />
+        o amanhã.
+      </h1>
+      <p class="hero__sub reveal">
+        A CIENPE une rigor científico, educação continuada e inovação tecnológica 
+        para gerar impacto real na saúde, na ciência e na sociedade.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#atividades" class="btn btn--primary">Conheça nossas áreas</a>
+        <a href="#contato" class="btn btn--ghost">Fale conosco</a>
+      </div>
+    </div>
+    <div class="hero__aside reveal">
+      <div class="hero__stat">
+        <span class="hero__stat-number" data-target="4">0</span>
+        <span class="hero__stat-label">Áreas de atuação</span>
+      </div>
+      <div class="hero__stat">
+        <span class="hero__stat-number" data-suffix="+" data-target="100">0</span>
+        <span class="hero__stat-label">Projetos realizados</span>
+      </div>
+      <div class="hero__stat">
+        <span class="hero__stat-number" data-suffix="+" data-target="50">0</span>
+        <span class="hero__stat-label">Pesquisadores parceiros</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="sobre__layout">
+        <div class="sobre__visual">
+          <div class="sobre__diagram">
+            <div class="diagram__ring diagram__ring--outer"></div>
+            <div class="diagram__ring diagram__ring--mid"></div>
+            <div class="diagram__ring diagram__ring--inner"></div>
+            <div class="diagram__core">CIENPE</div>
+            <div class="diagram__dot" style="--angle:0deg">Pesquisa</div>
+            <div class="diagram__dot" style="--angle:90deg">Ensino</div>
+            <div class="diagram__dot" style="--angle:180deg">Ciência</div>
+            <div class="diagram__dot" style="--angle:270deg">Tecnologia</div>
+          </div>
+        </div>
+        <div class="sobre__text">
+          <span class="section-label reveal">Quem somos</span>
+          <h2 class="section-title reveal">
+            Uma empresa construída sobre a força do saber.
+          </h2>
+          <p class="reveal">
+            O nome <strong>CIENPE</strong> condensa nossa identidade: 
+            <em>Ciência, Ensino Continuado, Pesquisa e Tecnologia Ltda.</em> 
+            Somos uma organização comprometida com a geração e a difusão do conhecimento científico, 
+            operando na interseção entre academia, saúde e inovação.
+          </p>
+          <p class="reveal">
+            Acreditamos que o avanço do conhecimento é o caminho mais seguro para 
+            uma sociedade mais saudável, justa e desenvolvida. Por isso, cada projeto 
+            nasce de uma escuta cuidadosa e de uma metodologia rigorosa.
+          </p>
+          <div class="sobre__pillars reveal">
+            <div class="pillar"><span>🔬</span> Rigor Científico</div>
+            <div class="pillar"><span>📚</span> Educação Contínua</div>
+            <div class="pillar"><span>💡</span> Inovação Aplicada</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATIVIDADES -->
+  <section class="atividades" id="atividades">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">O que fazemos</span>
+        <h2 class="section-title reveal">Nossas áreas de atuação</h2>
+        <p class="section-sub reveal">Quatro frentes integradas, um único propósito: avançar o conhecimento e aplicá-lo onde ele mais importa.</p>
+      </div>
+
+      <div class="cards">
+
+        <div class="card reveal" data-index="1">
+          <div class="card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="2"/>
+              <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/>
+              <path d="M24 4v40M4 24h40" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="24" cy="24" r="3" fill="currentColor"/>
+            </svg>
+          </div>
+          <span class="card__num">01</span>
+          <h3 class="card__title">Pesquisa e Desenvolvimento Experimental</h3>
+          <p class="card__body">
+            Investigação científica em ciências físicas e naturais, com foco em produção de conhecimento original, 
+            metodologia experimental rigorosa e publicação de resultados de impacto.
+          </p>
+          <div class="card__tag">Ciências Físicas · Ciências Naturais</div>
+        </div>
+
+        <div class="card reveal" data-index="2">
+          <div class="card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2"/>
+              <path d="M16 20h16M16 28h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M8 16h32" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="14" cy="12" r="2" fill="currentColor"/>
+              <circle cx="20" cy="12" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <span class="card__num">02</span>
+          <h3 class="card__title">Educação Superior — Pós-Graduação e Extensão</h3>
+          <p class="card__body">
+            Programas de pós-graduação e extensão universitária orientados à formação avançada de profissionais, 
+            com currículo atualizado e corpo docente qualificado.
+          </p>
+          <div class="card__tag">Pós-Graduação · Extensão</div>
+        </div>
+
+        <div class="card reveal" data-index="3">
+          <div class="card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 8l4 8h8l-6.5 5.5 2.5 8.5L24 26l-8 4 2.5-8.5L12 16h8l4-8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M14 36l-6 4M34 36l6 4M24 38v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="card__num">03</span>
+          <h3 class="card__title">Apoio à Educação</h3>
+          <p class="card__body">
+            Serviços e soluções de suporte a instituições educacionais — exceto caixas escolares — 
+            incluindo assessoria pedagógica, capacitação e desenvolvimento de materiais didáticos.
+          </p>
+          <div class="card__tag">Assessoria · Capacitação · Didática</div>
+        </div>
+
+        <div class="card reveal" data-index="4">
+          <div class="card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M36 12v8h-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="24" cy="24" r="4" fill="currentColor" fill-opacity=".2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M24 20v4l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="card__num">04</span>
+          <h3 class="card__title">Apoio à Gestão de Saúde</h3>
+          <p class="card__body">
+            Soluções para organizações do setor de saúde, aliando ciência de dados, pesquisa aplicada 
+            e consultoria estratégica para aprimorar processos, qualidade e resultados em saúde.
+          </p>
+          <div class="card__tag">Saúde · Consultoria · Dados</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSÃO / CTA INTERMEDIÁRIO -->
+  <section class="missao" id="missao">
+    <div class="missao__bg">
+      <div class="missao__lines"></div>
+    </div>
+    <div class="container">
+      <div class="missao__content">
+        <span class="section-label section-label--light reveal">Nossa missão</span>
+        <blockquote class="missao__quote reveal">
+          "Produzir, difundir e aplicar o conhecimento científico com excelência, 
+          ética e responsabilidade — contribuindo para o avanço da ciência e para 
+          a melhoria da qualidade de vida."
+        </blockquote>
+        <div class="missao__values reveal">
+          <div class="value">
+            <span class="value__icon">⚗️</span>
+            <span class="value__label">Excelência Científica</span>
+          </div>
+          <div class="value">
+            <span class="value__icon">🤝</span>
+            <span class="value__label">Ética e Responsabilidade</span>
+          </div>
+          <div class="value">
+            <span class="value__icon">🌱</span>
+            <span class="value__label">Impacto Social</span>
+          </div>
+          <div class="value">
+            <span class="value__icon">🔗</span>
+            <span class="value__label">Colaboração</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contato" id="contato">
+    <div class="container">
+      <div class="contato__layout">
+        <div class="contato__info">
+          <span class="section-label reveal">Entre em contato</span>
+          <h2 class="section-title reveal">Vamos construir algo juntos?</h2>
+          <p class="reveal">
+            Seja para parcerias em pesquisa, programas educacionais ou projetos de saúde, 
+            nossa equipe está pronta para ouvir e propor soluções.
+          </p>
+          <div class="contato__details reveal">
+            <div class="contato__item">
+              <span class="contato__icon">✉</span>
+              <span>contato@cienpe.com.br</span>
+            </div>
+            <div class="contato__item">
+              <span class="contato__icon">📞</span>
+              <span>(00) 0000-0000</span>
+            </div>
+            <div class="contato__item">
+              <span class="contato__icon">📍</span>
+              <span>CEP 15.038-010, nº 61 — São José do Rio Preto, SP</span>
+            </div>
+          </div>
+        </div>
+        <div class="contato__map reveal">
+          <iframe
+            title="Localização CIENPE"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d329.48854984018715!2d-49.43715300407621!3d-20.81447023433095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bdaddd47f5a0e3%3A0xaa821cd539ca43db!2sR.%20dos%20Pardais%2C%2061%20-%20Jardim%20do%20Cedro%2C%20S%C3%A3o%20Jos%C3%A9%20do%20Rio%20Preto%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1779244880712!5m2!1spt-BR!2sbr"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <a
+            class="map__directions"
+            href="https://www.google.com/maps/search/R.+dos+Pardais,+61+-+Jardim+do+Cedro,+São+José+do+Rio+Preto+-+SP"
+            target="_blank"
+            rel="noopener noreferrer">
+            Ver no Google Maps →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="#" class="nav__logo">
+            <span class="nav__logo-mark">C</span>
+            <span class="nav__logo-text">IENPE</span>
+          </a>
+          <p>Ciência, Ensino Continuado,<br />Pesquisa e Tecnologia Ltda.</p>
+        </div>
+        <div class="footer__links">
+          <h4>Navegação</h4>
+          <a href="#sobre">Sobre</a>
+          <a href="#atividades">Atividades</a>
+          <a href="#missao">Missão</a>
+          <a href="#contato">Contato</a>
+        </div>
+        <div class="footer__links">
+          <h4>Áreas</h4>
+          <a href="#atividades">P&D Científico</a>
+          <a href="#atividades">Pós-Graduação</a>
+          <a href="#atividades">Apoio Educacional</a>
+          <a href="#atividades">Gestão em Saúde</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span id="yearInfo"></span> CIENPE — Ciência, Ensino Continuado, Pesquisa e Tecnologia Ltda. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
